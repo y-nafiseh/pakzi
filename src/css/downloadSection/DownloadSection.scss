@@ -1,0 +1,44 @@
+.downloadContainer{
+    font-family: 'IRANSans';
+    padding-top: 20px;
+    min-height:200px;
+    .downloadTitle{
+        display: flex;
+        justify-content: center;
+        color:#555555;
+        h2{
+            font-weight: normal;
+        }  
+    }
+    .downloadLinkContainer{
+        display: flex;
+        justify-content: center;
+        .bazar{
+            padding:8px;
+            .imageSrc{
+                width: 170px;
+                height: 50px;
+                content:url('../../images/downloadLink/market-cafebazzar.400d691f.svg');
+            }
+        }
+        .sibApp{
+            padding:8px;
+            .imageSrc{
+                width: 170px;
+                height: 50px;
+                content:url('../../images/downloadLink/market-sibapp.500e3560.svg');
+            }
+        }
+
+    }
+    .anotherLink{
+        display: flex;
+        justify-content: center;
+        padding-top: 26px;
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            color:#157DDF;
+        }
+    }
+}

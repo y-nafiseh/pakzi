@@ -1,0 +1,36 @@
+.fourthSectionBg{
+    min-height: 300px;
+    .fourthSectionContainer{
+        font-family: 'IRANSans';
+        display: flex;
+        flex-direction: row-reverse;
+
+        .imageContainer{
+            .imageSrc{
+                margin-right:176px;
+                width: 667px;
+                height: 364px;
+                content: url('../../images/sections/symbol_9.ef1947a8.svg');
+            }
+        }
+        .contentContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .contentContainerText{
+                padding-right: 10px;
+                text-align: right;
+                margin-right:80px;
+                border-right:2px solid  #F4F4F4;
+                h2{
+                    margin:0;
+                    font-weight: normal;
+                }
+                p{
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

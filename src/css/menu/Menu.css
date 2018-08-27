@@ -1,0 +1,34 @@
+.menuContainer {
+  font-family: 'IRANSans';
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60px;
+}
+
+.menuContainer .logo {
+  padding: 16px;
+}
+
+.menuContainer .logo .logoSrc {
+  width: 45px;
+  height: 45px;
+  content: url("../../images/logo/logo.6aef0162.svg");
+}
+
+.menuContainer .linksContainer ul {
+  list-style: none;
+  padding-top: 6px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.menuContainer .linksContainer ul a {
+  margin-right: 24px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menuContainer .linksContainer ul li:first-child a {
+  border-bottom: 2px solid #fff;
+}

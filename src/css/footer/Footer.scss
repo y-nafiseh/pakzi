@@ -1,0 +1,203 @@
+.footerContainer{
+    min-height: 250px;
+    font-family:'IRANSans';
+    padding-top:68px;
+    padding: 60px 16px 0 16px;
+    .socialContainer{
+        display: flex;
+        justify-content:space-between ;
+        .email{
+            .emailContent{
+                position: relative;
+                min-width: 290px;
+                input{
+                    min-width: 280px;
+                    background: #F4F4F4;
+                    border-radius: 24px;
+                    border: none;
+                    height: 48px;
+                    text-align: right;
+                    font-family: 'IRANSans';
+                    padding-right: 16px;
+                }
+                button{
+                    position: absolute;
+                    color:#fff;
+                    min-width: 123px;
+                    background: #7ddc16;
+                    border-radius: 24px;
+                    border: none;
+                    font-family: 'IRANSans';
+                    height: 49px;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        .social{
+            .socialContent{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                span{
+                    font-size: 14px;
+                }
+            }
+            .sicialImageContent{
+                display: flex;
+                align-items: center;
+                .facebook{
+                    padding:0 4px;
+                    .facebookImage{
+                        width:40px;
+                        height:40px;
+                        content: url('../../images/socials/social-facebook.f0ecc478.svg');
+                    }    
+                }
+                .linkdin{
+                    padding:0 4px;
+                    .linkdinImage{
+                        width:40px;
+                        height:40px;
+                        content: url('../../images/socials/social-linkedin.0641e1b7.svg');
+                    }    
+                }
+                .instagram{
+                    padding:0 4px;
+                    .instagramImage{
+                        width:40px;
+                        height:40px;
+                        content: url('../../images/socials/social-instagram.1a016e00.svg');
+                    }    
+                }
+                .telegram{
+                    padding:0 4px;
+                    .telegramImage{
+                        width:40px;
+                        height:40px;
+                        content: url('../../images/socials/social-telegram.72338599.svg');
+                    }    
+                }
+                .twitter{
+                    padding:0 4px;
+                    .twitterImage{
+                        width:40px;
+                        height:40px;
+                        content: url('../../images/socials/social-twitter.28f20dbb.svg');
+                    }    
+                }
+                
+                
+            }
+        }
+    }
+    .footerContent{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        padding:16px 24px;
+        min-height: 130px;
+        background: #000;
+        border: none;
+        border-radius: 16px;
+        .contact{
+            .contactContainer{
+                padding: 0 16px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                min-width: 200px;
+                min-height:48px;
+                background: #555555;
+                border: none;
+                border-radius: 24px;
+                .empty{
+                    height:15px;
+                }
+                .number{
+                    span{
+                        color:#ffffff;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+                .phone{
+                    display:flex;
+                    align-items: center;
+                    .phoneImage{
+                        width: 25px;
+                        height: 25px;
+                        content: url('../../images/icon/phone-call.svg');
+                        text-align: right;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .enamad{
+            display: flex;
+            align-items: center;
+            .enamadImage{
+                width: 70px;
+                height: 100px;
+                content: url('../../images/icon/enamad.png');
+            }
+        }
+        .footerLink{
+            min-width: 350px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            .firstCol{
+                display: flex;
+                flex-direction: column;
+                text-align:right;
+                div{
+                    padding: 8px 0;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .secondCol{
+                display: flex;
+                flex-direction: column;
+                text-align:right;
+                div{
+                    padding: 8px 0;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .thirdCol{
+                display: flex;
+                flex-direction: column;
+                text-align:right;
+                div{
+                    padding: 8px 0;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .role{
+        .roleContainer{
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            a{
+                color:#157DDF;
+            }
+        }
+    }
+}

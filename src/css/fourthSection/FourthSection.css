@@ -1,0 +1,39 @@
+.fourthSectionBg {
+  min-height: 300px;
+}
+
+.fourthSectionBg .fourthSectionContainer {
+  font-family: 'IRANSans';
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fourthSectionBg .fourthSectionContainer .imageContainer .imageSrc {
+  margin-right: 176px;
+  width: 667px;
+  height: 364px;
+  content: url("../../images/sections/symbol_9.ef1947a8.svg");
+}
+
+.fourthSectionBg .fourthSectionContainer .contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourthSectionBg .fourthSectionContainer .contentContainer .contentContainerText {
+  padding-right: 10px;
+  text-align: right;
+  margin-right: 80px;
+  border-right: 2px solid  #F4F4F4;
+}
+
+.fourthSectionBg .fourthSectionContainer .contentContainer .contentContainerText h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.fourthSectionBg .fourthSectionContainer .contentContainer .contentContainerText p {
+  margin: 0;
+  font-size: 14px;
+}
