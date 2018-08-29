@@ -5,9 +5,33 @@
   padding: 60px 16px 0 16px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footerContainer {
+    padding: 30px 16px 0 16px;
+  }
+}
+
 .footerContainer .socialContainer {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .socialContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.footerContainer .socialContainer .email {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .socialContainer .email {
+    justify-content: center;
+  }
 }
 
 .footerContainer .socialContainer .email .emailContent {
@@ -26,6 +50,12 @@
   padding-right: 16px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footerContainer .socialContainer .email .emailContent input {
+    min-width: 310px;
+  }
+}
+
 .footerContainer .socialContainer .email .emailContent button {
   position: absolute;
   color: #fff;
@@ -39,6 +69,16 @@
   left: 0;
 }
 
+.footerContainer .socialContainer .social {
+  display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .socialContainer .social {
+    justify-content: center;
+  }
+}
+
 .footerContainer .socialContainer .social .socialContent {
   display: flex;
   flex-direction: row-reverse;
@@ -47,6 +87,12 @@
 
 .footerContainer .socialContainer .social .socialContent span {
   font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .socialContainer .social .socialContent span {
+    display: none;
+  }
 }
 
 .footerContainer .socialContainer .social .sicialImageContent {
@@ -115,6 +161,14 @@
   border-radius: 16px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footerContainer .footerContent {
+    min-height: 94px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .footerContainer .footerContent .contact .contactContainer {
   padding: 0 16px;
   display: flex;
@@ -125,6 +179,12 @@
   background: #555555;
   border: none;
   border-radius: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .footerContent .contact .contactContainer {
+    min-width: 250px;
+  }
 }
 
 .footerContainer .footerContent .contact .contactContainer .empty {
@@ -153,6 +213,13 @@
 .footerContainer .footerContent .enamad {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .footerContent .enamad {
+    display: none;
+  }
 }
 
 .footerContainer .footerContent .enamad .enamadImage {
@@ -162,10 +229,15 @@
 }
 
 .footerContainer .footerContent .footerLink {
-  min-width: 350px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .footerContent .footerLink {
+    display: none;
+  }
 }
 
 .footerContainer .footerContent .footerLink .firstCol {
@@ -220,6 +292,12 @@
   display: flex;
   justify-content: center;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer .role .roleContainer {
+    font-size: 10px;
+  }
 }
 
 .footerContainer .role .roleContainer a {

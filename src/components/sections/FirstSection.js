@@ -2,17 +2,18 @@ import React, {Component} from 'react';
 import '../../css/font/Font.css';
 import '../../css/firstSection/FirtSection.css';
 import Menu from './Menu';
+import  '../../css/media/Media.css';
 
 class FisrSection extends Component{
     render(){
         return(
-            <div className='bg'>
+            <div className='row bg'>
                 <Menu />
-                <div className='mainContainer'>
-                    <div className='imageContainer'>
+                <div className='row mainContainer'>
+                    <div className='col-xs-12 col-sm-4 imageContainer'>
                         <img className='imageSrc'/>
                     </div>
-                    <div className='contentContainer'>
+                    <div className='col-xs-12 col-sm-8 contentContainer'>
                         <div className='rowOne'>
                             <div className='numContainer'>
                                 <img className='numSrc'/>
@@ -30,10 +31,12 @@ class FisrSection extends Component{
                             </div>
                         </div>
                         <div className='rowTwo'>
-                            <div class='downloadtitle'>
-                                <span>برای</span>
-                                <h2> شروع پاکزی</h2>
-                                <span>را نصب کنید</span>
+                            <div class='downloadTitle'>
+                                <div className='downloadTitleContent'>
+                                    <span>برای</span>
+                                    <h2> شروع پاکزی</h2>
+                                    <span>را نصب کنید</span>
+                                </div>
                             </div>
                             <div className='downloadAppLinkContainer'>
                                 <div className='downloadAppLink'>

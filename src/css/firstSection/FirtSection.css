@@ -6,10 +6,38 @@
   background-size: 100% 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .bg {
+    background-image: none;
+    background: #7ddc16;
+  }
+}
+
 .bg .mainContainer {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 86px;
+}
+
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+}
+
+.bg .mainContainer .imageContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .imageContainer {
+    padding-right: 8px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .bg .mainContainer .imageContainer .imageSrc {
@@ -18,8 +46,15 @@
   content: url("../../images/sections/symbol_2.e0c40b3d.svg");
 }
 
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .imageContainer .imageSrc {
+    width: 70%;
+    height: auto;
+  }
+}
+
 .bg .mainContainer .contentContainer {
-  margin-right: 80px;
+  margin-right: 10px;
   padding-top: 40px;
   font-family: 'IRANSans';
   color: #fff;
@@ -36,6 +71,19 @@
 
 .bg .mainContainer .contentContainer .rowOne .numContainer .numSrc {
   content: url("../../images/sections/symbol_3.cc054296.svg");
+}
+
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .contentContainer .rowOne .numContainer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .contentContainer .rowOne .textContainer {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 
 .bg .mainContainer .contentContainer .rowOne .textContainer .numText {
@@ -57,24 +105,43 @@
 
 .bg .mainContainer .contentContainer .rowTwo {
   margin-top: 30px;
-  margin-right: 52px;
+  margin-right: 50px;
 }
 
-.bg .mainContainer .contentContainer .rowTwo .downloadtitle {
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .contentContainer .rowTwo {
+    margin-right: 0;
+  }
+}
+
+.bg .mainContainer .contentContainer .rowTwo .downloadTitle {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   margin-bottom: 10px;
 }
 
-.bg .mainContainer .contentContainer .rowTwo .downloadtitle h2 {
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .contentContainer .rowTwo .downloadTitle {
+    justify-content: center;
+  }
+}
+
+.bg .mainContainer .contentContainer .rowTwo .downloadTitle .downloadTitleContent {
+  min-width: 220px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.bg .mainContainer .contentContainer .rowTwo .downloadTitle .downloadTitleContent h2 {
   margin: 0;
   font-weight: normal;
   margin-right: 4px;
   margin-left: 4px;
 }
 
-.bg .mainContainer .contentContainer .rowTwo .downloadtitle span {
+.bg .mainContainer .contentContainer .rowTwo .downloadTitle .downloadTitleContent span {
   font-size: 14px;
 }
 
@@ -83,14 +150,20 @@
   flex-direction: row-reverse;
 }
 
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .contentContainer .rowTwo .downloadAppLinkContainer {
+    justify-content: center;
+  }
+}
+
 .bg .mainContainer .contentContainer .rowTwo .downloadAppLinkContainer .downloadAppLink {
-  width: 50%;
-  padding: 8px;
+  width: 234px;
+  padding: 12px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 24px;
   background: #555555;
 }
 
@@ -103,6 +176,12 @@
 .bg .mainContainer .contentContainer .rowThree {
   display: flex;
   flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 767px) {
+  .bg .mainContainer .contentContainer .rowThree {
+    justify-content: center;
+  }
 }
 
 .bg .mainContainer .contentContainer .rowThree .rowThreeContent {

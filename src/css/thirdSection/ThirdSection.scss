@@ -3,23 +3,41 @@
     .thirdSectionContainer{
         font-family: 'IRANSans';
         display: flex;
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+        }
         .imageContainer{
+            display: flex;
+            justify-content: center;
+            padding-left:100px;
+            @media only screen and (max-width: 767px) {
+                align-items: center;
+                padding-left: 0;
+            }
             .imageSrc{
-                margin-left:176px;
                 width: 303px;
                 height: 426px;
                 content:url(../../images/sections/symbol_7.fcdfa094.svg);
+                @media only screen and (max-width: 767px) {
+                    width: 70%;
+                    height: auto;
+                }
             }
         }
         .contentContainer{
             display: flex;
-            justify-content: center;
             align-items: center;
+            @media only screen and (max-width: 767px) {
+                justify-content: center;
+            }
             .contentContainerText{
                 padding-right: 10px;
                 text-align: right;
-                margin-left:60px;
+                margin-left:130px;
                 border-right:2px solid  #F4F4F4;
+                @media only screen and (max-width: 767px) {
+                    margin-left: 0;
+                }
                 h2{
                     margin:0;
                     font-weight: normal;

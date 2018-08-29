@@ -2,19 +2,37 @@
   font-family: 'IRANSans';
   display: flex;
   flex-direction: row-reverse;
-    height: 60px;
+  height: 64px;
+  @media only screen and (max-width: 767px) {
+    background-image: none;
+    background: #7ddc16;
+}
     .logo{
-      padding:16px;
-      .logoSrc{
-        width:45px;
-        height: 45px;
-        content: url('../../images/logo/logo.6aef0162.svg');
+      min-width: 48px;
+      min-height:48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        display: flex;
+        align-items: center;
       }
-    }
+        .logoSrc{
+          width:48px;
+          height: 48px;
+          content: url('../../images/logo/logo.6aef0162.svg');
+        }
+      }
     .linksContainer{
+      display:flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      @media only screen and (max-width: 767px) {
+        display: none;
+    }
       ul{
+        margin:0;
         list-style: none;
-        padding-top:6px;
         display: flex;
         flex-direction: row-reverse;
         a{

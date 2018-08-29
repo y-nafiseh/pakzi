@@ -5,9 +5,9 @@ import '../../css/footer/Footer.css';
 class Footer extends Component{
     render(){
         return(
-            <div className='footerContainer'>
-                <div className='socialContainer'>
-                    <div className='social'>
+            <div className='row footerContainer'>
+                <div className='row socialContainer'>
+                    <div className='col-xs-12 col-sm-6 social'>
                         <div className='socialContent'>
                             <span>:پاکزی را در شبکه های اجتماعی</span>
                             <div className='sicialImageContent'>
@@ -39,7 +39,7 @@ class Footer extends Component{
                             </div>
                         </div>
                     </div>
-                    <div class='email'>
+                    <div class='col-xs-12 col-sm-6 email'>
                         <div className='emailContent'>
                             <input type='text' placeholder='آدرس ایمیل' />
                             <button>عضویت در خبرنامه</button>
@@ -47,7 +47,7 @@ class Footer extends Component{
                     </div>
                 </div>
                 
-                <div className='footerContent'>
+                <div className='row footerContent'>
                     <div className='contact'>
                         <div className='contactContainer'>
                             <div className='empty'></div>
@@ -103,8 +103,8 @@ class Footer extends Component{
                     </div>
                 </div>
             
-                <div className='role'>
-                    <div className='roleContainer'>
+                <div className='row role'>
+                    <div className='col-xs-12 roleContainer'>
                         <p>کلیه حقوق مادی و معنوی این وبسایت متعلق به
                             <a href='#'> شرکت اکسون ویژن سیستم </a>
                          میباشد

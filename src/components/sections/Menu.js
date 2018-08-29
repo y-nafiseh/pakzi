@@ -1,17 +1,18 @@
 import React , {Component} from 'react';
 import '../../css/font/Font.css';
 import  '../../css/menu/Menu.css';
+import  '../../css/media/Media.css';
 
 class Header extends Component{
     render(){
         return (
-            <div className='menuContainer'>
-                <div className='logo'>
+            <div className='row menuContainer'>
+                <div className='col-xs-12 col-sm-1 logo'>
                     <a href='#' alt='logo'>
                         <img className='logoSrc'/>
                     </a>
                 </div>
-                <div className='linksContainer'>
+                <div className='col-sm-11 linksContainer'>
                     <ul>
                         <li>
                             <a href='a'>پاکزی</a>

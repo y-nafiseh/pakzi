@@ -4,20 +4,40 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-
+    @media only screen and (max-width: 767px) {
+        background-image: none;
+        background: #7ddc16;
+    }
+    
     .mainContainer{
         display: flex;
         flex-direction: row-reverse;
         margin-top:86px;
+        @media only screen and(max-width:767px) {
+            flex-direction: column-reverse;
+            margin-top:0;
+        }
         .imageContainer{
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 0;
+            @media only screen and (max-width: 767px) {
+                padding-right: 8px;
+                justify-content: center;
+                align-items: center;
+            }
            .imageSrc{
             width:383px;
             height:445px;
             content: url('../../images/sections/symbol_2.e0c40b3d.svg');
+            @media only screen and (max-width: 767px) {
+                width: 70%;
+                height: auto;
+            }
             } 
         }
         .contentContainer{
-            margin-right: 80px;
+            margin-right: 10px;
             padding-top:40px;
             font-family: 'IRANSans';
             color: #fff;
@@ -29,8 +49,15 @@
                     .numSrc{
                         content: url('../../images/sections/symbol_3.cc054296.svg');
                     }
+                    @media only screen and (max-width: 767px) {
+                        display: none;
+                    }
                 }
                 .textContainer{
+                    @media only screen and (max-width: 767px) {
+                        width:100%;
+                        font-size: 14px;
+                    }
                     .numText{
                         display: flex;
                         flex-direction: row-reverse;
@@ -49,33 +76,48 @@
             }
             .rowTwo{
                 margin-top: 30px;
-                margin-right:52px;
-                .downloadtitle{
+                margin-right:50px;
+                @media only screen and (max-width: 767px) {
+                    margin-right: 0;
+                }
+                .downloadTitle{
                     display: flex;
                     flex-direction: row-reverse;
-                    align-items: center;
                     margin-bottom: 10px;
-                    h2{
-                        margin: 0;
-                        font-weight: normal;
-                        margin-right:4px;
-                        margin-left:4px;
+                    @media only screen and (max-width: 767px) {
+                        justify-content: center;
                     }
-                    span{
-                        font-size: 14px;
+                    .downloadTitleContent{
+                        min-width: 220px;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+                        padding: 0 8px;
+                        h2{
+                            margin: 0;
+                            font-weight: normal;
+                            margin-right:4px;
+                            margin-left:4px;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
                     }
                 }
                 .downloadAppLinkContainer{
                     display: flex;
                     flex-direction: row-reverse;
+                    @media only screen and (max-width: 767px) {
+                        justify-content: center;
+                    }
                     .downloadAppLink{
-                        width:50%;
-                        padding:8px;
+                        width:234px;
+                        padding:12px;
                         display: flex;
                         flex-direction: row-reverse;
                         justify-content: center;
                         align-items:center;
-                        border-radius: 20px;
+                        border-radius: 24px;
                         background: #555555; 
                         a{
                             color:#fff;
@@ -88,6 +130,9 @@
             .rowThree{
                 display: flex;
                 flex-direction: row-reverse;
+                @media only screen and (max-width: 767px) {
+                    justify-content: center;
+                }
                 .rowThreeContent{
                     margin-top:10px;
                     margin-right:16px;
