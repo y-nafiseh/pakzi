@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 992px) {
         background-image: none;
         background: #7ddc16;
     }
@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: row-reverse;
         margin-top:86px;
-        @media only screen and(max-width:767px) {
+        @media only screen and(max-width:992px) {
             flex-direction: column-reverse;
             margin-top:0;
         }
@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: row-reverse;
             padding-right: 0;
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 992px) {
                 padding-right: 8px;
                 justify-content: center;
                 align-items: center;
@@ -41,22 +41,32 @@
             padding-top:40px;
             font-family: 'IRANSans';
             color: #fff;
+            @media only screen and (max-width: 992px) {
+                margin-right: 0;
+            }
             .rowOne{
                 display: flex;
                 flex-direction: row-reverse;
+                @media only screen and (max-width: 992px) {
+                    justify-content: center;
+                }
                 .numContainer{
                     padding-top:9px;
                     .numSrc{
                         content: url('../../images/sections/symbol_3.cc054296.svg');
                     }
-                    @media only screen and (max-width: 767px) {
+                    @media only screen and (max-width: 992px) {
                         display: none;
                     }
                 }
                 .textContainer{
-                    @media only screen and (max-width: 767px) {
+                    display: flex;
+                    flex-direction: column;
+                    @media only screen and (max-width: 992px) {
                         width:100%;
                         font-size: 14px;
+                        justify-content: center;
+                        align-items: center;
                     }
                     .numText{
                         display: flex;
@@ -77,14 +87,14 @@
             .rowTwo{
                 margin-top: 30px;
                 margin-right:50px;
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 992px) {
                     margin-right: 0;
                 }
                 .downloadTitle{
                     display: flex;
                     flex-direction: row-reverse;
                     margin-bottom: 10px;
-                    @media only screen and (max-width: 767px) {
+                    @media only screen and (max-width: 992px) {
                         justify-content: center;
                     }
                     .downloadTitleContent{
@@ -107,7 +117,7 @@
                 .downloadAppLinkContainer{
                     display: flex;
                     flex-direction: row-reverse;
-                    @media only screen and (max-width: 767px) {
+                    @media only screen and (max-width: 992px) {
                         justify-content: center;
                     }
                     .downloadAppLink{
@@ -119,6 +129,14 @@
                         align-items:center;
                         border-radius: 24px;
                         background: #555555; 
+                        -ms-transition: all .5s ease-in;
+                        -webkit-transition: all .5s ease-in;
+                        transition: all 0.5s ease-in;
+                        &:hover{
+                            -ms-transform: scale(1.05);
+                            -webkit-transform: scale(1.05);
+                            transform: scale(1.05);
+                        }
                         a{
                             color:#fff;
                             text-decoration: none;
@@ -130,7 +148,7 @@
             .rowThree{
                 display: flex;
                 flex-direction: row-reverse;
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 992px) {
                     justify-content: center;
                 }
                 .rowThreeContent{

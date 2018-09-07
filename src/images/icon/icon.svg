@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style='fill:#fff;background-color:#7ddc16;'><g class="nc-icon-wrapper js-transition-icon" data-effect="scale" data-event="click"><g class="js-transition-icon__state"><g>
+	<g>
+		<path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249
+			C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306
+			C514.019,27.23,514.019,14.135,505.943,6.058z"></path>
+	</g>
+</g><g>
+	<g>
+		<path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636
+			c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"></path>
+	</g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g></g><g class="js-transition-icon__state" aria-hidden="true" style="display: none;"><g>
+	<g>
+		<path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+			c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"></path>
+	</g>
+</g><g>
+	<g>
+		<path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+			c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z"></path>
+	</g>
+</g><g>
+	<g>
+		<path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+			c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z"></path>
+	</g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g><g>
+</g></g></g><script>!function(){"use strict";if(!window.requestAnimationFrame){var a=null;window.requestAnimationFrame=function(t,i){var e=(new Date).getTime();a||(a=e);var s=Math.max(0,16-(e-a)),n=window.setTimeout(function(){t(e+s)},s);return a=e+s,n}}function r(t,i,e,s){return 1>(t/=s/2)?e/2*t*t*t*t+i:-e/2*((t-=2)*t*t*t-2)+i}function e(t){return t?[1,0]:[0,1]}function t(t){this.element=t,this.svg=function t(i){var e=i.parentNode;if("svg"!==e.tagName)e=t(e);return e;}(this.element),this.getSize(),this.states=this.element.querySelectorAll(".js-transition-icon__state"),this.time={start:null,total:200},this.status={interacted:!1,animating:!1},this.animation={effect:this.element.getAttribute("data-effect"),event:this.element.getAttribute("data-event")},this.init()}t.prototype.getSize=function(){var t=this.svg.getAttribute("viewBox");this.size=t?{width:t.split(" ")[2],height:t.split(" ")[3]}:this.svg.getBoundingClientRect()},t.prototype.init=function(){var t=this;this.svg.addEventListener(t.animation.event,function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},t.prototype.triggerAnimation=function(t){var i=this.getProgress(t);this.animateIcon(i),this.checkProgress(i)},t.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},t.prototype.checkProgress=function(t){if(this.time.total>t)window.requestAnimationFrame(this.triggerAnimation.bind(this));else{this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null;var i=e(this.status.interacted);this.states[i[0]].removeAttribute("aria-hidden"),this.states[i[1]].setAttribute("aria-hidden","true")}},t.prototype.animateIcon=function(t){if(t>this.time.total){t=this.time.total;}if(0>t){t=0;};var i=e(this.status.interacted);this.states[i[0]].style.display=t>this.time.total/2?"none":"block",this.states[i[1]].style.display=t>this.time.total/2?"block":"none","scale"==this.animation.effect?this.scaleIcon(t,i[0],i[1]):this.rotateIcon(t,i[0],i[1])},t.prototype.scaleIcon=function(t,i,e){var s=r(Math.min(t,this.time.total/2),1,-.2,this.time.total/2).toFixed(2),n=r(Math.max(t-this.time.total/2,0),.2,-.2,this.time.total/2).toFixed(2);this.states[i].setAttribute("transform","translate("+this.size.width*(1-s)/2+" "+this.size.height*(1-s)/2+") scale("+s+")"),this.states[e].setAttribute("transform","translate("+this.size.width*n/2+" "+this.size.height*n/2+") scale("+(1-n)+")")},t.prototype.rotateIcon=function(t,i,e){var s=r(t,0,180,this.time.total).toFixed(2);this.states[i].setAttribute("transform","rotate(-"+s+" "+this.size.width/2+" "+this.size.height/2+")"),this.states[e].setAttribute("transform","rotate("+(180-s)+" "+this.size.width/2+" "+this.size.height/2+")")};var i=document.querySelectorAll(".js-transition-icon");if(i)for(var s=0;i.length>s;s++)new t(i[s])}();</script></svg>

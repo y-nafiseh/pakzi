@@ -10,10 +10,10 @@ class FisrSection extends Component{
             <div className='row bg'>
                 <Menu />
                 <div className='row mainContainer'>
-                    <div className='col-xs-12 col-sm-4 imageContainer'>
+                    <div className='col-xs-12 col-lg-5 imageContainer'>
                         <img className='imageSrc'/>
                     </div>
-                    <div className='col-xs-12 col-sm-8 contentContainer'>
+                    <div className='col-xs-12 col-lg-7 contentContainer'>
                         <div className='rowOne'>
                             <div className='numContainer'>
                                 <img className='numSrc'/>
@@ -31,7 +31,7 @@ class FisrSection extends Component{
                             </div>
                         </div>
                         <div className='rowTwo'>
-                            <div class='downloadTitle'>
+                            <div className='downloadTitle'>
                                 <div className='downloadTitleContent'>
                                     <span>برای</span>
                                     <h2> شروع پاکزی</h2>
@@ -45,7 +45,7 @@ class FisrSection extends Component{
                             </div>
                         </div>
                         <div className='rowThree'>
-                            <div class='rowThreeContent'>
+                            <div className='rowThreeContent'>
                                 <p>به همین راحتی در ۳ قـدم پـسـماندهای خود را به پول </p>
                                 <p>تبدیل کنید. سامانه جمع آوری و خرید پـسـماندهای </p>
                                 <p>خشک</p>

@@ -6,13 +6,71 @@
   @media only screen and (max-width: 767px) {
     background-image: none;
     background: #7ddc16;
-}
+  }
+    .burggerIcon{
+      display: none;
+      @media only screen and (max-width: 767px) {
+        min-width: 48px;
+        min-height:48px;
+        display: flex;
+      }
+      .burggerContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width:100%;
+        border: none;
+        .burggerBtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border: none;
+            background-color: #7ddc16;
+            width: 36px;
+            height: 36px;
+          .burggerSrc{
+            // position: absolute;
+            border: none;
+            // background-color: #7ddc16;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../images/icon/menu.svg');
+            background-repeat: no-repeat;
+            }
+          }
+        }
+        .closeBtn{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          border: none;
+          background-color: #7ddc16;
+          width: 36px;
+          height: 36px;
+        .closeSrc{
+          display: none;
+          position: absolute;
+          border: none;
+          background-color: #7ddc16;
+          width: 20px;
+          height: 20px;
+          background-image: url('../../images/icon/close.svg');
+          background-repeat: no-repeat;
+        }
+      }
+    }
     .logo{
       min-width: 48px;
       min-height:48px;
       display: flex;
       align-items: center;
       justify-content: center;
+      @media only screen and (max-width: 767px) {
+        padding-left: 50px;
+      }
       a{
         display: flex;
         align-items: center;
@@ -22,7 +80,7 @@
           height: 48px;
           content: url('../../images/logo/logo.6aef0162.svg');
         }
-      }
+    }
     .linksContainer{
       display:flex;
       flex-direction: row-reverse;
@@ -48,5 +106,5 @@
         }
       }
     }
-  }
   
+}

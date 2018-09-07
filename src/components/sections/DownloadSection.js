@@ -21,7 +21,7 @@ class DownloadApp extends Component{
                         </a>
                     </div>
                 </div>
-                <div class='anotherLink'>
+                <div className='anotherLink'>
                     <a href='#'>دانلود به روش های دیگر</a>
                 </div>
             </div>

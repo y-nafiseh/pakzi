@@ -29,17 +29,17 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .footerContainer .socialContainer .email {
+  .footerContainer .socialContainer {
     justify-content: center;
   }
 }
 
-.footerContainer .socialContainer .email .emailContent {
+.footerContainer .socialContainer .emailContent {
   position: relative;
   min-width: 290px;
 }
 
-.footerContainer .socialContainer .email .emailContent input {
+.footerContainer .socialContainer .emailContent input {
   min-width: 280px;
   background: #F4F4F4;
   border-radius: 24px;
@@ -51,12 +51,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .footerContainer .socialContainer .email .emailContent input {
+  .footerContainer .socialContainer .emailContent input {
     min-width: 310px;
   }
 }
 
-.footerContainer .socialContainer .email .emailContent button {
+.footerContainer .socialContainer .emailContent button {
   position: absolute;
   color: #fff;
   min-width: 123px;
@@ -67,6 +67,15 @@
   height: 49px;
   top: 0;
   left: 0;
+  -ms-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.footerContainer .socialContainer .emailContent button:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .footerContainer .socialContainer .social {
@@ -179,6 +188,15 @@
   background: #555555;
   border: none;
   border-radius: 24px;
+  -ms-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.footerContainer .footerContent .contact .contactContainer:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 767px) {

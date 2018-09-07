@@ -39,7 +39,7 @@ class Footer extends Component{
                             </div>
                         </div>
                     </div>
-                    <div class='col-xs-12 col-sm-6 email'>
+                    <div className='col-xs-12 col-sm-6 email'>
                         <div className='emailContent'>
                             <input type='text' placeholder='آدرس ایمیل' />
                             <button>عضویت در خبرنامه</button>
@@ -48,7 +48,7 @@ class Footer extends Component{
                 </div>
                 
                 <div className='row footerContent'>
-                    <div className='contact'>
+                    <div className='col-sm-2 contact'>
                         <div className='contactContainer'>
                             <div className='empty'></div>
                             <div className='number'>
@@ -60,13 +60,13 @@ class Footer extends Component{
                         </div>
                     </div>
                 
-                    <div className='enamad'>
+                    <div className='col-sm-4 enamad'>
                         <a href='#'>
                             <img className='enamadImage'/>
                         </a>
                     </div>
 
-                    <div className='footerLink'>
+                    <div className='col-sm-6 footerLink'>
                         <div className='firstCol'>
                             <div>
                                 <a href='#'>پاکزی</a>

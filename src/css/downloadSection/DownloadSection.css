@@ -49,4 +49,13 @@
   text-decoration: none;
   font-size: 14px;
   color: #157DDF;
+  -ms-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.downloadContainer .anotherLink a:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
